@@ -24,6 +24,5 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "test-io"
-if (!System.getenv().containsKey("JITPACK"))
 include(":app")
 include(":toast")
