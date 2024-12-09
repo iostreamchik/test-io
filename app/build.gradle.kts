@@ -49,7 +49,11 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
-    implementation("com.github.iostreamchik:test-io:1.0.4")
+    implementation("com.github.iostreamchik.test-io:toast:1.0.6")
+    implementation("com.github.iostreamchik.test-io:libra:1.0.6")
+
+//    implementation("com.github.username.test-app:liba:1.0.0")
+//    implementation("com.github.username.test-app:libb:1.0.0")
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

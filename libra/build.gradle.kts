@@ -45,8 +45,9 @@ dependencies {
 
 configure<PublishingExtension> {
     publications.create<MavenPublication>("libra") {
+        group = "com.github.iostreamchik"
         groupId = "com.github.iostreamchik"
         artifactId = "libra"
-        version = "1.0.0"
+        version = "1.0.1"
     }
 }
