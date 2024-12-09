@@ -40,18 +40,16 @@ dependencies {
     androidTestImplementation libs.androidx.espresso.core
 }
 
-publishing {
-    publications {
-        release(MavenPublication) {
-            groupId = 'com.github.iostreamchik'
-            artifactId = 'toast'
-            artifact "$buildDir/outputs/aar/toast-release.aar"
-            version = '1.0.1'
-
-            afterEvaluate {
+afterEvaluate {
+    publishing {
+        publications {
+            // Creates a Maven publication called "release".
+            release(MavenPublication) {
                 from components.release
+                groupId = 'com.github.iostreamchik'
+                artifactId = 'toast'
+                version = '1.0.2'
             }
         }
     }
 }
-
