@@ -45,7 +45,8 @@ publishing {
         release(MavenPublication) {
             groupId = 'com.github.iostreamchik'
             artifactId = 'toast'
-            version = '1.0'
+            artifact "$buildDir/outputs/aar/toast-release.aar"
+            version = '1.0.1'
 
             afterEvaluate {
                 from components.release
